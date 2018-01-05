@@ -1,0 +1,2112 @@
+\documentclass[b5j]{jarticle}
+
+%%朝プリsetting
+\usepackage[driver=dvipdfm,top=1cm,bottom=1.5cm,left=1cm,right=1cm,foot=1cm]{geometry}%用紙設定
+\pagestyle{empty}%ページを出力しない%
+%\usepackage{EMpict2e}
+
+%\def\thesection{No. \arabic{section}}
+%
+%\def\Name#1{\section{\large\bf #1\hfill
+%\underline{ \hspace{1zw}年\hspace{2zw}組\hspace{2zw}
+%番名前\hspace{12zw}}}}
+
+\def\thesection{No. \arabic{section}}
+\def\Name#1{\section{\large\bf  #1\hfill
+\underline{ \hspace{1zw}年\hspace{2zw}組\hspace{2zw}
+番名前\hspace{12zw}}}}
+
+\def\thesubsection{\arabic{subsection}}
+
+\def\labelenumi{(\theenumi)}
+\def\theenumii{\roman{enumii}}
+\def\labelenumii{(\theenumii)}
+%\def\theenumiii{\roman{enumiii}}
+%\def\labelenumiii{(\theenumiii )}
+
+
+
+
+%{\LARGE \hfill 極限\hfill No.1　 }
+%\begin{center}
+%
+%\hfill{\Large \underline{\hspace{1zw}年\hspace{2zw}組\hspace{2zw}
+%番名前\hspace{12zw}}}
+%\end{center}
+
+
+%\usepackage[dvipdfmx,svgnames]{xcolor}%tikzパッケージよりも前に読み込みます。
+%
+%\usepackage{tikz} % tikzパッケージを読み込む
+%\usetikzlibrary{intersections, calc}
+%\usetikzlibrary{quotes, angles,through,patterns}%quotesは角度のラベルオプション内に記述するために使用
+%\usepackage{tikz-3dplot}
+%\usepackage{mathrsfs}
+%\usetikzlibrary{arrows}
+
+
+
+%\usepackage[deluxe]{otf}%和文フォント
+%\usepackage{latexsym}
+%\usepackage{amssymb}
+%\usepackage{MnSymbol}
+%$\largestar$
+%\usepackage{amsmath}
+%\usepackage{amsthm}
+\usepackage{ulem}%下線，波線，取り消し線など
+\usepackage{tabularx}%伸びる表
+
+\usepackage{emathMw}
+
+
+\usepackage{emathP}%emathスタイルファイル
+\usepackage{emathEy}%問題番号枝など
+\usepackage{emathGps}
+
+%\usepackage[shortlabels,inline]{enumitem}
+%箇条書き環境
+
+%\setlist{noitemsep}
+%\setlist[enumerate]{leftmargin=*}
+%\setlist[enumerate,1]{label=\large\textbf{\arabic*.}, ref=\arabic*}
+%\setlist[enumerate,2]{label={(\arabic*)}, ref={(\arabic*)}}
+%\setlist[enumerate,3]{label={\roman*)}, ref={\roman*)}}
+%
+%
+%
+%\def\labelenumi{\Large\textbf\theenumi. }
+%\def\theenumii{\arabic{enumii}}
+%\def\labelenumii{(\theenumii)}
+%\def\theenumiii{\roman{enumiii}}
+%\def\labelenumiii{(\theenumiii )}%問題番号
+%
+
+\usepackage{hako}%ハコ環境
+\usepackage{multicol}%段落環境
+\setlength{\columnsep}{1cm}%段落間隔
+
+%\usepackage[continue]{emathAe}%解答環境
+%\usepackage{type1cm}% PS, PDF 作成には必要
+%\usepackage[debug]{emathPs}%描画eps作成
+\usepackage{showexample}%\itemboxなど
+%
+%
+%%%%%%%ベクトル%%%%%%
+\usepackage[e]{EMesvect}%ベクトル
+\def\Beku#1{\ooalign{\bekutoru{　}\crcr\hss{$#1$}\hss}}
+
+%%%%%太字%%%%
+%\def\bf{\gtfamily\bfseries}
+%
+
+
+
+\begin{document}
+
+
+\setcounter{section}{0}
+
+
+
+%%51-55 2008/6%%
+%% 51 %%
+\Name{数学IAIIB応用}
+\hakosyokika
+\begin{caprm}
+  Githubのtestだよう。
+  \LaTeX できた。再起動が大切だ。
+
+$OA=4$，$OB=1$，$\kaku{AOB}=60\Deg$である三角形OABにおいて，
+$\bekutoru{OA}=\Beku a$，$\bekutoru{OB}=\Beku b$とする。また，辺OAを$s:(1-s)$に内分する点をC，辺ABを$t:(1-t)$に内分する点をDとする。ただし，$0<s<1$，$0<t<1$である。
+\begin{enumerate}
+\item $\bekutoru{CD}$を$s$，$t$，$\Beku a$，$\Beku b$を用いて表せ。
+\item $\bekutoru{CD}\perp\Beku b$のとき，$s$を$t$を用いて表せ。
+\item (2)の条件の下で，$\zettaiti{\bekutoru{CD}}=\bunsuu1{\sqrt 3}$が成り立つとき，$t$の値を求めよ。
+\end{enumerate}%8
+\end{caprm}
+
+
+\newpage
+
+%% 52 %%
+\Name{数学IAIIB応用}
+\hakosyokika
+次の連立方程式を解け。ただし，$x<y$とする。
+$$x^{2}+y^{2}+3xy=11,\,x+y-xy=9$$
+%32
+\newpage
+
+%% 53 %%
+\Name{数学IAIIB応用}
+\hakosyokika
+\begin{enumerate}
+\item $\zettaiti{x^{2}-1}=x+1$を解け。
+\item $\zettaiti{x^{2}-1}=x+a$が3個の解をもつとき，$a$の値を求めよ。
+\end{enumerate}%33
+%\begin{enumerate}
+%\item $\dlim{x\to -2}\bunsuu{1}{x+2}\left(\bunsuu{1}{x^{2}+1}+\bunsuu1{x-3}\right)=\Hako$
+
+%\item $\dlim{n\to \infty}\bunsuu{1+3+5\cdots+(2n-1)}{2n^{2}+3n-1}=\Hako$
+
+%\item $\dlim{x\to -\infty}\bunsuu{\sqrt{x^{2}+x+1}}{x}=\Hako$
+
+%\item $\dlim{x\to \infty}\left\{\sqrt{4x^{2}+3x}-2x\right\}=\Hako$
+
+%\end{enumerate}%42
+\newpage
+
+%% 54 %%
+\Name{数学IAIIB応用}
+\hakosyokika
+9枚のカードがあり，各々のカードには$1,\,\sqrt2,\,\sqrt3,\,2,\,\sqrt5,\,\sqrt6,\,\sqrt7,\,\sqrt8,\,3$が書かれている。これらのカードを横一列に並べるとき，どの無理数のカードの右側にも，その数よりも大きい整数のカードがあるような確率を求めよ。
+%68
+\newpage
+
+%% 55 %%
+\Name{数学IAIIB応用}
+\hakosyokika
+0以上の実数$s$，$t$が$s^{2}+t^{2}=1$を満たしながら動くとき，方程式$x^{4}-2(s+t)x^{2}+(s-t)^{2}=0$の解のとる値の範囲を求めよ。
+%57
+\newpage
+
+
+%%56-60 2006/7
+%% 56 %%
+\Name{数学IAIIB応用}
+\hakosyokika
+\begin{caprm}
+直線$l:y=\bunsuu12x+1$と2点$A(1,\,4)$，$B(5,\,6)$がある。
+\begin{enumerate}
+\item 直線$l$に関して，点Aと対称な点Cの座標を求めよ。
+\item 直線$l$上の点Pで，$AP+PB$を最小にするものの座標を求めよ。
+\end{enumerate}
+\end{caprm}%8
+\newpage
+
+%% 57 %%
+\Name{数学IAIIB応用}
+\hakosyokika
+\begin{caprm}
+座標平面上の2点Q$(1,\,1)$，R$\left(2,\,\bunsuu12\right)$に対して，点Pが円$x^{2}+y^{2}=1$の周上を動くとき，
+\begin{enumerate}
+\item \sankaku{PQR}の重心Gの軌跡を求めよ。
+\item 点Pから\sankaku{PQR}の重心Gまでの距離が最小となるとき，点Pの座標を求めよ。
+
+\item \sankaku{PQR}の面積の最小値を求めよ。
+
+\end{enumerate}
+
+\end{caprm}
+%14
+\newpage
+
+%% 58 %%
+\Name{数学IAIIB応用}
+\hakosyokika
+正の数$a$，$b$，$x$，$y$を考える。$a+b=1$ならば，すべての自然数$n$について不等式$(ax+by)^{n}\leqq ax^{n}+by^{n}$であることを証明せよ。
+%37
+\newpage
+
+%% 59 %%
+\Name{数学IAIIB応用}
+\hakosyokika
+\begin{caprm}
+放物線${\it C}:y=\bunsuu14x^{2}$と，点B$(0,\,b)$を中心とする半径$r$の円（ただし，$r<b$）は異なる2点$A_{1}$，$A_{2}$を共有し，それ以外には共有点をもたないとする。ここで，点$A_{1}$，$A_{2}$はそれぞれ，第1象限，第2象限にあるとする。
+
+\begin{enumerate}
+\item 円の中心Bおよび2点$A_{1}$，$A_{2}$の座標を
+$r$を用いて表せ。さらに，$r$の値の範囲を求めよ。
+
+\item $r=4$のとき，$\kaku{}A_{1}BA_{2}$の大きさを求めよ。ただし，$0\Deg<\kaku{}A_{1}BA_{2}<180\Deg$とする。
+
+
+
+\item (2)で求めた$\kaku{}A_{1}BA_{2}$に対する弧$\ko*{A_{1}A_{2}}$と放物線${\it C}$で囲まれた図形の面積を求めよ。
+
+\end{enumerate}
+
+
+\end{caprm}%15
+
+\newpage
+
+%% 60 %%
+\Name{数学IAIIB応用}
+\hakosyokika
+任意の実数$x$に対して常に$ax^{2}+2bx+c>px^{2}+2qx+r>0\cdots☆$
+が成立することき，$ac-b^{2}>pr-q^{2}$が成立することを示せ。ただし，$a\neqq p$，$ap\neqq 0$とする。
+%59
+
+\newpage
+
+
+
+%%61-65 2008/8%%
+%% 61 %%
+\Name{数学IAIIB応用}
+\hakosyokika
+数列$\{a_{n}\}$が$a_{1}=2$，$(n+2)a_{n+1}-na_{n}=3n+4\quad (n\geqq 1)$で定義されるとき，
+\begin{enumerate}
+\item $a_{2}$，$a_{3}$，$a_{4}$を求めよ。
+
+\item $a_{n}$を$n$の式で表せ。
+\end{enumerate}%4
+
+\newpage
+
+
+%% 62 %%
+\Name{数学IAIIB応用}
+\hakosyokika
+3の倍数でない自然数を小さいものから順に並べたとき，$n$番目の数を$a_{n}$とする。例えば，$a_{1}=1$，$a_{2}=2$，$a_{3}=4$，$a_{4}=5$，$a_{5}=7$，$a_{6}=8$，$a_{7}=10$，$a_{8}=11$，$\cdots$である。
+\begin{enumerate}
+\item $a_{20}$を求めよ。
+
+\item $\tretuwa{k=1}{20}a_{k}$の値を求めよ。
+
+\item $a_{n}=2008$となる$n$の値を求めよ。
+\end{enumerate}
+%8
+\newpage
+
+%% 63 %%
+\Name{数学IAIIB応用}
+\hakosyokika
+
+$0\leqq x<\pi$のとき，関数$f(x)=a\cos^{2}x+b\sin^{2}x+\cos x\sin x$について，次の問いに答えなさい。ただし，$a$，$b$は実数である。
+\begin{enumerate}
+\item $f(x)$を$\cos 2x$と$\sin 2x$を用いて表せ。
+
+\item $f(x)$の最大値と最小値をそれぞれ$a$，$b$を用いて表せ。
+
+\item $f(x)$の最大値と最小値がをそれぞれ$2$，$-1$であるとき，$a$，$b$の値を求めよ。
+\end{enumerate}
+%36
+
+\newpage
+
+
+
+%% 64 %%
+\Name{数学IAIIB応用}
+\hakosyokika
+\begin{caprm}
+平面上に\sankaku{ABC}がある。この平面上の点Pに対してAPの中点をQ，BQの中点をR，CRの中点をSとする。2点P，Sが一致しているとき，
+\begin{enumerate}
+\item $\bekutoru{AB}=\Beku b$，$\bekutoru{AC}=\Beku c$とするとき，$\bekutoru{AP}$を$\Beku b$，$\Beku c$を用いて表せ。
+
+\item \sankaku{PQR}と\sankaku{ABC}の面積比を求めよ。
+\end{enumerate}
+\end{caprm}
+%63
+
+\newpage
+
+
+
+%% 65 %%
+\Name{数学IAIIB応用}
+\hakosyokika
+自然数$n$に対して，$a_{n}=(\cos2^{n})(\cos2^{n-1})\cdots(\cos2)(\cos1)$とおく。ただし，角の大きさは弧度法を用いる。
+\begin{enumerate}
+\item $a_{1}=\bunsuu{\sin4}{4\sin1}$を示せ。
+\item $a_{n}=\bunsuu{\sin2^{n+1}}{2^{n+1}\sin1}$を示せ。
+\item $a_{n}<\bunsuu{\sqrt 2}{2^{n+1}}$を示せ。
+\end{enumerate}
+%37
+
+\newpage
+
+
+
+
+
+%%66-70 2008/9%%
+%% 66 %%
+\Name{数学IAIIB応用}
+\hakosyokika
+6人の学生を3組に分ける。まず，3人，2人，1人の3組に分ける方法は\Hako 通りある。次に2人ずつの3組に分ける方法は\Hako 通りある。6人の学生を3組に分ける方法は全部で\Hako 通りある。
+%8
+
+\newpage
+
+
+%% 67 %%
+\Name{数学IAIIB応用}
+\hakosyokika
+1，2，3，4を重複を許して並べてできる数について，
+\begin{enumerate}
+
+\item 各桁の数の和が6となる5桁の数の個数を求めよ。
+
+\item 各桁の数の和が7となる5桁の数の個数を求めよ。
+
+\item 各桁の数の和が$k+3$となる$k$桁の数の個数を求めよ。
+
+
+
+\end{enumerate}
+
+%8
+\newpage
+
+%% 68 %%
+\Name{数学IAIIB応用}
+\hakosyokika
+
+白い玉が2個，黒い玉が3個，赤い玉が4個ある。これらの玉を次のような条件ですべて使って，一列に並べる。
+\begin{enumerate}
+\item 玉の色のすべての並べ方は，\Hako 通りである。
+\item 白い玉2個が隣り合わない並べ方は，\Hako 通りある。
+\item 黒い玉3個が連続している並べ方は，\Hako 通りある。
+\item 同じ色な玉は連続しない並べ方は，\Hako 通りある。
+
+
+\end{enumerate}
+%14
+
+\newpage
+
+
+
+%% 69 %%
+\Name{数学IAIIB応用}
+\hakosyokika
+6人がそれぞれプレゼントを持参してパーティーに参加した。参加者が自分以外の誰かにプレゼントを渡すとき，6人全員が1つずつプレゼントを受け取ることができるような渡し方は\karaHako 通りある。
+%14
+
+\newpage
+
+
+
+%% 70 %%
+\Name{数学IAIIB応用}
+\hakosyokika
+空間に座標系が定められていて，$z$軸上に2点A$(0,\,0,\,6)$，B$(0,\,0,\,20)$が与えられている。$xy$平面上の点P$(x,\,y,\,0)$で，$0\leqq x\leqq 15$，$0\leqq y\leqq 15$，$\kaku{APB}\geqq30\Deg$を満たすものの全体が作る図形の面積を求めよ。
+%40
+
+\newpage
+
+
+
+
+
+\setcounter{section}{0}
+
+
+
+%%51-55 2008/6%%
+%% 51 %%
+\Name{数学IAIIB応用}
+\hakosyokika
+\begin{caprm}
+$OA=4$，$OB=1$，$\kaku{AOB}=60\Deg$である三角形OABにおいて，
+$\bekutoru{OA}=\Beku a$，$\bekutoru{OB}=\Beku b$とする。また，辺OAを$s:(1-s)$に内分する点をC，辺ABを$t:(1-t)$に内分する点をDとする。ただし，$0<s<1$，$0<t<1$である。
+\begin{enumerate}
+\item $\bekutoru{CD}$を$s$，$t$，$\Beku a$，$\Beku b$を用いて表せ。
+\item $\bekutoru{CD}\perp\Beku b$のとき，$s$を$t$を用いて表せ。
+\item (2)の条件の下で，$\zettaiti{\bekutoru{CD}}=\bunsuu1{\sqrt 3}$が成り立つとき，$t$の値を求めよ。
+\end{enumerate}%8
+
+
+
+
+\begin{multicols*}{2}
+{\bf 【解答】}
+\begin{enumerate}
+\item $\Beku c=\bekutoru{OC}$，$\Beku d=\bekutoru{OD}$とおくと，
+$$\Beku c=s\Beku a,\,\Beku d=(1-t)\Beku a+t\Beku b$$
+\begin{align*}
+\bm{\bekutoru{CD}}&=\Beku d-\Beku c\\
+&=\bm{(1-t-s)\Beku a+t\Beku b}
+\end{align*}
+
+\item $\Beku a\cdot\Beku b=1\cdot4\cdot\cos60\Deg =2\cdots\maru1$
+\begin{align*}
+\bekutoru{CD}\cdot\Beku b&=(1-t-s)\Beku a\cdot \Beku b+t\zettaiti{\Beku b}^{2}\\
+&=2(1-t-s)+t\quad (\because\maru1,\,OB=1)\\
+&=2-t-2s=0
+\end{align*}
+$$\therefore \bm{s=1-\bunsuu t2}$$
+
+\item
+$\begin{aligned}[t]
+\zettaiti{\bekutoru{CD}}^{2}&=(1-t-s)^{2}\zettaiti{\Beku a}^{2}+2t(1-t-s)\Beku a\cdot \Beku b+t^{2}\zettaiti{\Beku b}^{2}\\
+&=\left(-\bunsuu t2\right)^{2}\times 16+2t\left(-\bunsuu t2\right)\cdot 2+t^{2}\\
+&\qquad\quad (\because\maru1,\,OA=4,\,OB=2)\\
+&=3t^{2}=\bunsuu13
+\end{aligned}$
+$\therefore t^{2}=\bunsuu19$。$0<t<1$より，
+$$\bm{t=\bunsuu13}$$
+\end{enumerate}
+
+
+{\bf 【コメント】}
+
+図形的にも気になるところですが，今回は代数的に解いただけです。
+点CとDの位置に気をつけましょう。
+\end{multicols*}
+
+
+\end{caprm}
+
+
+\newpage
+
+%% 52 %%
+\Name{数学IAIIB応用}
+\hakosyokika
+次の連立方程式を解け。ただし，$x<y$とする。
+$$x^{2}+y^{2}+3xy=11,\,x+y-xy=9$$
+%32
+
+
+
+\begin{multicols*}{2}
+{\bf 【解答】}
+
+$u=x+y$，$v=xy$とおくと，与えられた不等式は
+$$(x+y)^{2}+xy=11,\,x+y-xy=9$$
+$$\therefore u^{2}+v=11\cdots\maru1,\,u+v=9\cdots\maru2$$
+$v$を消去して，
+$$u^{2}+u-20=0$$
+$$\therefore (u+5)(u-4)=0$$
+$$\therefore u=-5,\,4$$
+
+\begin{enumerate}[(i)]
+\item $u=-5$のとき，\maru2より，$v=-14$
+
+このとき，$x$，$y$は2次方程式$t^{2}+5t-14=0$の2解となる。
+$$(t-2)(t+7)=0$$
+$x<y$より，$(x,\,y)=(-7,\,2)$
+
+\item $u=4$のとき，\maru2より，$v=-5$
+
+このとき，$x$，$y$は2次方程式$t^{2}-4t+5=0$の2解となる。
+$$(t-5)(t+1)=0$$
+$x<y$より，$(x,\,y)=(-1,\,5)$
+
+
+\end{enumerate}
+以上より，$\bm{(x,\,y)=(-7,\,2),\,(-1,\,5)}$
+
+
+{\bf 【コメント】}
+
+2式とも，$x$，$y$についての対称式なので，$x+y=u$，$xy=v$とおいて考えます。
+
+1文字消去で$y$を消去すると，$x$の4次方程式になります。
+$$x^4+x^3-39x^2+31x+70=0$$
+因数分解して，
+$$(x+1)(x-2)(x+7)(x-5)=0$$
+より，解いていきます。
+\end{multicols*}
+
+
+
+\newpage
+
+%% 53 %%
+\Name{数学IAIIB応用}
+\hakosyokika
+\begin{enumerate}
+\item $\zettaiti{x^{2}-1}=x+1$を解け。
+\item $\zettaiti{x^{2}-1}=x+a$が3個の解をもつとき，$a$の値を求めよ。
+\end{enumerate}%33
+%\begin{enumerate}
+%\item $\dlim{x\to -2}\bunsuu{1}{x+2}\left(\bunsuu{1}{x^{2}+1}+\bunsuu1{x-3}\right)=\Hako$
+
+%\item $\dlim{n\to \infty}\bunsuu{1+3+5\cdots+(2n-1)}{2n^{2}+3n-1}=\Hako$
+
+%\item $\dlim{x\to -\infty}\bunsuu{\sqrt{x^{2}+x+1}}{x}=\Hako$
+
+%\item $\dlim{x\to \infty}\left\{\sqrt{4x^{2}+3x}-2x\right\}=\Hako$
+
+%\end{enumerate}%42
+
+
+
+
+\begin{multicols*}{2}
+{\bf 【解答】}
+
+\begin{enumerate}
+\item
+\begin{enumerate}[(i)]
+\item $x\leqq -1,\,1\leqq x$のとき，
+$$x^{2}-1=x+1$$
+$$x^{2}-x-2=0$$
+$$(x-2)(x+1)=0$$
+$$\therefore x=2,\-1（ともに適）$$
+
+\item $-1<x<1$のとき，
+$$-x^{2}+1=x+1$$
+$$x^{2}+x=0$$
+$$x(x+1)=0$$
+$$\therefore x=0（x=-1は不適）$$
+\end{enumerate}
+以上より，$\bm{x=-1,\,0,\,2}$
+
+\item $y=\zettaiti{x^{2}-1}$と$y=x+a$のグラフを考える。
+\begin{enumerate}[(i)]
+\item $x\leqq -1,\,1\leqq x$のとき，
+$$x^{2}-1=x+a$$
+$$x^{2}-x-1-a=0$$
+$$\left(x-\bunsuu12\right)^{2}-\bunsuu54-a=0$$
+2つのグラフの接点はない。
+\item $-1<x<1$のとき，
+$$-x^{2}+1=x+a$$
+$$x^{2}+x-1+a=0$$
+$$\left(x+\bunsuu12\right)^{2}-\bunsuu54+a=0$$
+よって，$a=\bunsuu54$のとき，$x=-\bunsuu12$で2つのグラフは接する。
+
+\begin{center}
+\begin{zahyou}[ul=10mm,gentenhaiti={[se]}](-3,3)(-2,5)
+ \def\Fx{abs(X**2-1)}
+ \def\Gx{X-1}
+ \def\Hx{X+1}
+ \def\Ix{X+5/4}
+
+  \YGurafu*\Fx
+  \YGurafu*\Gx
+  \YGurafu*\Hx
+  \YGurafu*\Ix
+
+
+
+ \Put{(-1,0)}[s]{$-1$}
+ \Put{(-.5,.75)}[syaei=x,xlabel=-\frac12]{}
+ \Put{(0,1)}[e]{$1$}
+ \Put{(1,0)}[s]{$1$}
+ \Put{(0,-1)}[e]{$-1$}
+\Put{(0,1.25)}[nw]{$\frac54$}
+ \Put{(2,3)}[syaei=x]{}
+
+
+\end{zahyou}
+ \end{center}
+
+共有点の個数が3となるのは，
+$$\bm{a=\bunsuu54,\,1}$$
+\end{enumerate}
+
+
+
+
+\end{enumerate}
+
+
+
+{\bf 【コメント】}
+
+$a$の範囲を共有点の個数で場合分けすると次のようになります。
+\begin{align*}
+a>\bunsuu54&で2個\\
+a=\bunsuu54&で3個\\
+1<a<\bunsuu54&で4個\\
+a=1&で3個\\
+-1<a<1&で2個\\
+a=-1&で1個\\
+a<-1&で0個
+\end{align*}
+\end{multicols*}
+
+
+\newpage
+
+%% 54 %%
+\Name{数学IAIIB応用}
+\hakosyokika
+9枚のカードがあり，各々のカードには$1,\,\sqrt2,\,\sqrt3,\,2,\,\sqrt5,\,\sqrt6,\,\sqrt7,\,\sqrt8,\,3$が書かれている。これらのカードを横一列に並べるとき，どの無理数のカードの右側にも，その数よりも大きい整数のカードがあるような確率を求めよ。
+%68
+
+
+\begin{multicols*}{2}
+{\bf 【解答】}
+
+並べ方の総数は$9\kaizyou（通り）$
+
+題意を満たす並べ方を考える。
+
+\begin{description}
+\item[手順1]3を右端に配置（1通り）
+\item[手順2]3の左側に$\sqrt 5,\,\sqrt 6,\,\sqrt 7,\,\sqrt 8$を配置（$4\kaizyou$通り）
+\item[手順3]2を【手順2】で並べた各数の間，または両端に配置（6通り）
+\item[手順4]$\sqrt 2,\,\sqrt 3$を【手順3】で並べた各数の間，または左端に配置。（右端は2か3なので，さらに右側に$\sqrt 2,\,\sqrt 3$を置くと題意を満たさない。また，$\sqrt 2,\,\sqrt 3$は連続して並んでもよい。）（$\bunsuu{7\kaizyou}{5\kaizyou}=7\cdot 6$通り）
+\item[手順5]1を【手順4】で並べた各数の間，または両端に配置（9通り）
+\end{description}
+
+以上より，$1\times 4\kaizyou\times 6\times7\times 6\times 9$通りとなり，求める確率は，
+ $$\bunsuu{1\times 4\kaizyou\times 6\times7\times 6\times 9}{9\kaizyou}=\bm{\bunsuu{3}{20}}$$
+{\bf 【コメント】}
+
+日本語が難しいね。『どの無理数のカードの右側』とは右隣だけではありません。もし右隣だけをさすのであれば，並べられないので確率は$0$です。このように，問題文に都合よく解釈をする場合があります。
+
+また，『その数よりも大きい整数のカードがある』の『ある』は存在を表します。つまり，一つあればよいのです。\\
+
+正解者の数え方で多かったのは，3の位置で場合分けしたものです。
+
+{\bf 【別解】}
+\begin{enumerate}[m]
+\item 3が1番右端$\cdots$
+残りはどのように並べてもよい。
+$$8\kaizyou 通り$$
+
+\item 3が右から2番目$\cdots$
+1番右端は1または2。残りはどのように並べてもよい。
+$$2\times 7\kaizyou 通り$$
+\item 3が右から3番目$\cdots$
+3の右側は
+$$(1,2)(2,1)(\sqrt 2,2)(\sqrt 3,2)$$
+の4通り。残りはどのように並べてもよい。
+$$4\times 6\kaizyou 通り$$
+
+\item 3が右から4番目$\cdots$
+3の右側は
+$$(1,\sqrt 2,2)(\sqrt 2,1,2)(\sqrt 2,2,1)(1,\sqrt 3,2)$$
+$$(\sqrt 3,1,2)(\sqrt 3,2,1)(\sqrt 2,\sqrt 3,2)(\sqrt 3,\sqrt 2,2)$$
+の8通り。残りはどのように並べてもよい。
+$$8\times 5\kaizyou 通り$$
+
+
+\item 3が右から5番目$\cdots$
+3の右側は$1,2,\sqrt 2,\sqrt3$が並ぶが，
+1はどこでもよい。（4通り）\\
+そのそれぞれに対して，$2,\sqrt 2,\sqrt3$の並びは
+$$(\sqrt 2,\sqrt 3,2)(\sqrt 3,\sqrt 2,2)$$
+の2通り。よって，$4\times 2=8$通り。
+残りはどのように並べてもよい。
+$$8\times 4\kaizyou 通り$$
+
+
+\end{enumerate}
+\begin{align*}
+\therefore \quad &\bunsuu{8\kaizyou+2\times7\kaizyou+4\times6\kaizyou+8\times 5\kaizyou+8\times 4\kaizyou}{9\kaizyou}\\
+&=\bunsuu{8\cdot7\cdot6\cdot5+2\cdot7\cdot6\cdot5+4\cdot6\cdot5+8\cdot5+8}{9\cdot8\cdot7\cdot6\cdot5}\\
+&=\bunsuu{(56+14+4)\cdot30+8\cdot 6}{9\cdot8\cdot7\cdot6\cdot5}\\
+&=\bunsuu{37\cdot5+4}{9\cdot4\cdot7\cdot5}=\bunsuu{189}{9\cdot4\cdot7\cdot5}=\bm{\bunsuu{3}{20}}
+\end{align*}
+
+
+\end{multicols*}
+
+\newpage
+
+%% 55 %%
+\Name{数学IAIIB応用}
+\hakosyokika
+0以上の実数$s$，$t$が$s^{2}+t^{2}=1$を満たしながら動くとき，方程式$x^{4}-2(s+t)x^{2}+(s-t)^{2}=0$の解のとる値の範囲を求めよ。
+%57
+
+
+\begin{multicols*}{2}
+{\bf 【解答】}
+
+$u=s+t$，$v=st$とおく。
+
+$s$，$t$は$s^2+t^2=1$を満たすので，
+$$(s+t)^2-2st=1$$
+$$\therefore u^2-2v=1\quad \therefore v=\bunsuu{u^2-1}2\cdots\maru1$$
+$s$，$t$は0以上の実数より，$z^2-uz+v=0$がの解が共に0以上と考えて，
+$$D=u^2-4v\geqq 0\wedge u\geqq0\wedge v\geqq0\cdots\maru2$$
+\maru1かつ\maru2より
+$$v=\bunsuu{u^2-1}2\quad(1\leqq u\leqq \sqrt 2)\cdots☆$$
+
+$x^{4}-2(s+t)x^{2}+(s-t)^{2}=0$は
+$$x^{4}-2ux^{2}+u^2-4v=0$$
+$$\therefore v=\bunsuu{(u-x^2)^2}4\cdots★$$
+
+
+★のグラフが$\left(\sqrt 2,\,\bunsuu12\right)$を通るとき，
+$$\bunsuu12=\bunsuu{\left(\sqrt2-x^2\right)^2}4$$
+$$\left(\sqrt2-x^2\right)^2=2$$
+$$\sqrt2-x^2=\pm\sqrt2\quad x^2=0,\,2\sqrt 2$$
+
+★のグラフは頂点の座標が$(x^2,\,0)$なので，グラフは$u$軸に接するように動く。
+$uv$平面で，☆と★のグラフが共有点を持つような$x$の範囲は
+
+\begin{center}
+\begin{zahyou}[ul=10mm,yokozikukigou={$u$},tatezikukigou={$v$}](-2,5)(-1,2)
+ \def\Fx{.5*X**2-.5}
+ \def\Gx{.25*X**2}
+ \def\Hx{.25*(X-sqrt(8))**2}
+ \def\Ix{.25*(X-sqrt(2))**2}
+
+ \YTen[xformat=f]\Fx{sqrt(2)}\A
+ \YTen[xformat=f]\Fx{-1*sqrt(2)}\B
+ \tenretu*{C(1,0)}
+ \Put\C[s]{$1$}
+
+ %\YGurafu\Fx{-1*sqrt(2)}{sqrt(2)}
+ \YGurafu\Gx{-2}{2}
+ \YGurafu\Hx{sqrt(8)-2}{sqrt(8)+2}
+ \YGurafu\Ix{sqrt(2)-2}{sqrt(2)+2}
+  \YGurafu\Fx\xmin{1}
+  \YGurafu\Fx{sqrt(2)}\xmax
+ \Put\A[syaei=xy,xlabel=\sqrt 2,ylabel=\frac12]{}
+\Put\B[syaei=xy,xlabel=-\sqrt 2,ylabel=]{}
+ \thicklines
+ \YGurafu\Fx{1}{sqrt(2)}
+ \kuromaru{\A;\B;\C}
+ \thinlines
+\end{zahyou}
+ \end{center}
+
+$$0\leqq x^2\leqq 2\sqrt{2}$$
+$$\therefore -\sqrt{2\sqrt2}\leqq x\leqq \sqrt{2\sqrt2}$$
+$$\therefore \bm{-\sqrt[4]{8}\leqq x\leqq \sqrt[4]{8}}$$
+
+\columnbreak
+{\bf 【別解：理系用】}
+
+$x^{4}-2(s+t)x^{2}+(s-t)^{2}=0$を解くと，
+\begin{align*}
+x^{2}&=s+t\pm\sqrt{(s+t)^{2}-(s-t)^{2}}\\
+&=s+t\pm\sqrt{4st}\quad (s,\,tは0以上)\\
+&=(\sqrt s\pm\sqrt t)^{2}\\
+\therefore x&=\pm\sqrt{s}\pm\sqrt t（複合任意）
+\end{align*}
+
+$p=\sqrt s,\,q=\sqrt t$とおくと，
+$$p^{4}+q^{4}=1,\,p\geqq 0,\,q\geqq 0$$
+\begin{enumerate}[(i)]
+\item $x=p+q$のときは，
+
+\begin{multicols}{2}
+
+\begin{center}
+\begin{zahyou}[ul=10mm,gentenhaiti={[se]},tatezikukigou={$q$},yokozikukigou={$p$},](-.5,2)(-.5,2)
+ \def\Ft{sqrt(cos(T))}
+ \def\Gt{sqrt(sin(T))}
+
+ \funcval\Ft{$pi/4}\tx
+
+ \def\Hx{-X+2*(\tx)}
+ \def\Ix{-X+1}
+
+
+  \BGurafu\Ft\Gt{0}{$pi/2}
+  \YGurafu*\Hx
+  \YGurafu*\Ix
+   \Hasen{\O(2,2)}
+ \Put{(1,0)}[s]{$1$}
+ \Put{(0,1)}[w]{$1$}
+
+
+\end{zahyou}
+ \end{center}
+\columnbreak
+
+
+$(p,\,q)=(1,\,0),\,(0,\,1)$のとき，$x=1$
+
+$p=q=\bunsuu{1}{\sqrt[4]{2}}$のとき，$x=\sqrt[4]{8}$
+
+\end{multicols}
+
+$$\therefore 1\leqq x\leqq\sqrt[4]{8}\cdots\maru1$$
+
+\item $x=-p-q$のときは，同様に，
+$ 1\leqq -x\leqq\sqrt[4]{8}$
+$$ \therefore -\sqrt[4]{8}\leqq x\leqq-1\cdots\maru2$$
+
+
+\item $x=-p+q$のときは，
+
+\begin{multicols}{2}
+\begin{center}
+\begin{zahyou}[ul=10mm,gentenhaiti={[se]},tatezikukigou={$q$},yokozikukigou={$p$},](-.5,2)(-1.5,1.5)
+ \def\Ft{sqrt(cos(T))}
+ \def\Gt{sqrt(sin(T))}
+
+ \funcval\Ft{$pi/4}\tx
+
+ \def\Hx{X+1}
+ \def\Ix{X-1}
+
+
+  \BGurafu\Ft\Gt{0}{$pi/2}
+  \Drawline{(-.5,.5)(.5,1.5)}
+  \YGurafu*\Ix
+
+ \Put{(1,0)}[s]{$1$}
+ \Put{(0,1)}[w]{$1$}
+\Put{(0,-1)}[e]{$-1$}
+
+
+\end{zahyou}
+ \end{center}
+\columnbreak
+
+
+$(p,\,q)=(1,\,0)$のとき，$x=-1$
+
+$(p,\,q)=(0,\,1)$のとき，$x=1$
+\end{multicols}
+$$\therefore -1\leqq x\leqq1\cdots\maru3$$
+
+
+\item $x=-p+q$のときは，同様に，
+$ -1\leqq -x\leqq1$
+$$ \therefore -1\leqq x\leqq1\cdots\maru4$$
+
+
+\end{enumerate}
+
+\maru1から\maru4の和集合を考えて，
+$$\bm{-\sqrt[4]{8}\leqq x\leqq \sqrt[4]{8}}$$
+
+{\bf 【コメント】}
+
+$x^{n}+y^{n}=1$のグラフの概形は既知としました。（文科系はちょっときついか....）
+\end{multicols*}
+
+\newpage
+
+
+%%56-60 2008/7
+%% 56 %%
+\Name{数学IAIIB応用}
+\hakosyokika
+\begin{caprm}
+直線$l:y=\bunsuu12x+1$と2点$A(1,\,4)$，$B(5,\,6)$がある。
+\begin{enumerate}
+\item 直線$l$に関して，点Aと対称な点Cの座標を求めよ。
+\item 直線$l$上の点Pで，$AP+PB$を最小にするものの座標を求めよ。
+\end{enumerate}
+
+
+
+\begin{multicols*}{2}
+{\bf 【解答】}
+
+\begin{enumerate}
+\item Aから直線$l$に下ろした垂線の足をHとする。
+
+Hは直線$l$上なので，媒介変数$t$を用いて，
+$$H(2t,\,t+1)$$
+とおける。$AH\perp 直線l$，直線$l$の方向ベクトルは$\Beku d=\retube21$より，
+\begin{align*}
+\bekutoru{AH}\cdot\Beku d&=\retube{2t-1}{t+1-4}\cdot\retube21\\
+&=4t-2+t-3\\
+&=5t-5=0\\
+&\therefore t=1
+\end{align*}
+$$\therefore H(2,\,2)$$
+$C(x,\,y)$とおくと，$\bekutoru{AC}=2\bekutoru{AH}$より，
+$$\retube{x-1}{y-4}=2\retube{1}{-2}$$
+$$\therefore x=3,\,y=0\quad \therefore \bm{C(3,\,0)}$$
+
+\item $A$，$B$は直線$l$に関して同じ側にある。
+\begin{center}
+\begin{zahyou}[ul=10mm,gentenhaiti={[se]},tatezikukigou={$y$},yokozikukigou={$x$},](-.5,6)(-.5,7)
+ \def\Fx{.5*X+1}
+ \tenretu{A(1,4)n;B(5,6)ne;C(3,0)s;P(2.5,2.25)se;H(2,2)sw}
+ \YGurafu*\Fx
+
+  \Hasen{\A\C\P}
+  \Hasen{\C\B}
+  \Drawline{\A\P\B}
+  \kuromaru{\A;\B;\C;\P}
+\Tyokkakukigou\A\H\P
+\touhenkigou<2>{\A\H;\H\C}
+
+
+
+\end{zahyou}
+ \end{center}
+
+よって，$AP=CP$より，
+$$AP+PB=CP+PB\geqq CB（一定）$$
+直線CBの式は
+$$y=3(x-3)$$
+よって，直線$l$とCBの交点がPとなるので，連立して解くと，
+$$3(x-3)=\bunsuu12x+1\quad \therefore \bunsuu52x=10$$
+$$\therefore x=4,\,y=3$$
+$$\therefore \bm{P(4,\,3)}$$
+\end{enumerate}
+
+{\bf 【コメント】}
+
+どのような解き方でもかまいませんが，解けるように。
+
+(2)は反射です。代数的にやろうとすると，文系は難しいと思う。（理系でも大変です）
+\end{multicols*}
+
+
+\end{caprm}%8
+\newpage
+
+%% 57 %%
+\Name{数学IAIIB応用}
+\hakosyokika
+\begin{caprm}
+座標平面上の2点Q$(1,\,1)$，R$\left(2,\,\bunsuu12\right)$に対して，点Pが円$x^{2}+y^{2}=1$の周上を動くとき，
+\begin{enumerate}
+\item \sankaku{PQR}の重心Gの軌跡を求めよ。
+\item 点Pから\sankaku{PQR}の重心Gまでの距離が最小となるとき，点Pの座標を求めよ。
+
+\item \sankaku{PQR}の面積の最小値を求めよ。
+
+\end{enumerate}
+
+
+
+\begin{multicols*}{2}
+{\bf 【解答】}
+
+\begin{enumerate}
+\item $P(s,\,t)$，$G(x,\,y)$とおくと，
+$$x=\bunsuu{s+1+2}3,\,y=\bunsuu{t+1+1/2}3$$
+$$\therefore s=3x-3,\,t=3y-\bunsuu32$$
+$s^2+t^2=1$に代入して，
+$$(3x-3)^2+\left(3y-\bunsuu32\right)^2=1$$
+$$(x-1)^2+\left(y-\bunsuu12\right)^2=\bunsuu19$$
+よって点Gの軌跡は，
+$$\bm{\text{\bf 中心}\left(1,\,\bunsuu12\right)\text{\bf ，半径}\bunsuu13\text{\bf の円}}$$
+
+\item $s=\cos\theta$，$t=\sin\theta$とおくと，
+\begin{align*}
+PG^2&=(x-s)^2+(y-t)^2\\
+&=\left(1-\bunsuu23s\right)^2+\left(\bunsuu12-\bunsuu23t\right)^2\\
+&=1-\bunsuu43s+\bunsuu49s^2+\bunsuu14-\bunsuu23t+\bunsuu49t^2\\
+&=\bunsuu54+\bunsuu49-\bunsuu23(2s+t)\quad (\because s^2+t^2=1)\\
+&=\bunsuu{61}{36}-\bunsuu{2\sqrt5}3\left(\bunsuu2{\sqrt 5}\cos\theta+\bunsuu1{\sqrt 5}\sin\theta\right)\\
+&=\bunsuu{61}{36}-\bunsuu{2\sqrt5}3\sin(\theta+\alpha)\\
+&\quad \quad \left(\cos\alpha=\bunsuu1{\sqrt 5},\,\sin\alpha=\bunsuu2{\sqrt 5}とする\right)
+\end{align*}
+よって，$\sin(\theta+\alpha)=1$となるとき，$PG^2$，すなわちPGは最小となる。
+$$\min\text{PG}=\sqrt{\bunsuu{61}{36}-\bunsuu{2\sqrt5}3}=\bunsuu{3\sqrt5-4}6$$
+これは
+$\cos\theta=\bunsuu2{\sqrt 5},\,\sin\theta=\bunsuu1{\sqrt 5}$のときで，
+$$\therefore \bm{P\left(\bunsuu2{\sqrt 5},\,\bunsuu1{\sqrt 5}\right)}$$
+
+\item $\bekutoru{PQ}=\left(1-\cos\theta,\,1-\sin\theta\right)$，
+
+$\bekutoru{PR}=\left(2-\cos\theta,\,\bunsuu12-\sin\theta\right)$とおくと，
+\begin{align*}
+\sankaku{PQR}
+&=\bunsuu12\Big|\left(1-\cos\theta\right)\left(\bunsuu12-\sin\theta\right)\\
+&\qquad\quad -\left(1-\sin\theta\right)\left(2-\cos\theta\right)\Big|\\
+&=\bunsuu12\Big|\bunsuu12-\sin\theta-\bunsuu12\cos\theta+\sin\theta\cos\theta\\
+&\qquad\quad -2+2\sin\theta+\cos\theta-\sin\theta\cos\theta\Big|\\
+&=\bunsuu12\Big|-\bunsuu32+\sin\theta+\bunsuu12\cos\theta\Big|\\
+&=\bunsuu{\zettaiti{-3+\cos\theta+2\sin\theta}}4\\
+&=\bunsuu{\zettaiti{-3+\sqrt{5}\cos(\theta-\alpha)}}4
+\geqq \bunsuu{3-\sqrt 5}4
+\end{align*}
+よって，\sankaku{PQR}の面積は$P\left(\bunsuu1{\sqrt 5},\,\bunsuu2{\sqrt 5}\right)$で
+$\bm{\text{\bf 最小値 } \bunsuu{3-\sqrt 5}4}$
+をとる。
+\end{enumerate}
+
+{\bf 【コメント】}
+
+(2)以降は重ためです。計算方法はいろいろありますが今回は三角関数でやりました。
+(2)(3)を図形的に考えるには下の図を参考に。
+まず，(1)で求めた円と単位円は相似で，その相似の中心はQRの中点Mです。(2)のPQが最小となるときのPとGの位置は$P_2$，$G_2$となります。(3)は直線QRと平行な単位円の接線のうち，近い方が$P=P_3$となります。
+
+\begin{center}
+\begin{zahyou}[haiti=t,ul=12mm,yokozikukigou={$x$},tatezikukigou={$y$},gentenhaiti={[sw]},yokozikuhaiti={[s]},tatezikuhaiti={[w]},yscale=1](-1.5,3)(-1.5,2)
+
+\tenretu{Q(1,1)n;R(2,.5)n}
+\tenretu*{A(1,.5)}
+
+\En\O{1}
+
+\calcval{1/3}\ra
+
+\calcval{-2*(sqrt(3))}\xb
+\En\A\ra
+
+\Bunten\Q\R11\M
+
+\Tyokusen\Q\R{}{}
+\Put\M[ne]{M}
+
+\Drawline{\M\O}
+
+
+\CandL\O{1}\O\M\PP\P
+
+\CandL\O{1}\O{(1,2)}\PPP\PPPP
+
+\Put\P[w]{$P_2$}
+
+\Put\PPPP[n]{$P_3$}
+
+\CandL\A\ra\O\M\GG\G
+
+\mTyokusen\PPPP{(-2,1)}{}{}
+
+\Put\G[se]{$G_2$}
+
+\kuromaru{\Q;\R;\M;\P;\G;\PPPP}
+
+%\thicklines
+%\YGurafu\Gx{0}\xmax
+
+%\YGurafu\Hx{0}\xmax
+
+
+
+%\thinlines
+%\YTen\Fx{1}\A
+%\YTen\Fx{-1}\B
+
+%\Put\A[syaei=xy,xlabel=1,ylabel=\frac12]{}
+%\Put\B[syaei=xy,xlabel=-1,ylabel=-\frac12]{}
+
+%\Put{(2,0)}[se]{$2$}
+%\Put{(3,0)}[se]{$3$}
+%\Put{(4,0)}[se]{$4$}
+
+%\Drawline{(3,\ymax)(3,\ymin)}
+%\Drawline{(4,\ymax)(4,\ymin)}
+%\Drawline{(\Pii,\ymax)(\Pii,\ymin)}
+
+\end{zahyou}
+\end{center}
+
+
+\end{multicols*}
+
+
+
+\end{caprm}
+%14
+\newpage
+
+%% 58 %%
+\Name{数学IAIIB応用}
+\hakosyokika
+正の数$a$，$b$，$x$，$y$を考える。$a+b=1$ならば，すべての自然数$n$について不等式$(ax+by)^{n}\leqq ax^{n}+by^{n}$であることを証明せよ。
+%37
+
+
+
+\begin{multicols*}{2}
+{\bf 【解答】}
+
+\begin{enumerate}[I)]
+
+\item $n=1$のとき，両辺ともに，$ax+by$となり，等号が成り立つ。
+\item $n=k$のとき，
+$$(ax+by)^{k}\leqq ax^{k}+by^{k}\cdots☆$$
+の成立を仮定する。
+
+$n=k+1$のとき，
+
+\begin{align*}
+&(ax+by)^{k+1}=(ax+by)(ax+by)^{k}\\
+&\leqq (ax+by)(ax^k+by^k)\quad (\because ax+by>0,\,☆)\\
+&=a^2x^{k+1}+abxy^k+abx^ky+b^2y^{k+1}=\maru1
+\end{align*}
+\begin{align*}
+ & ax^{k+1}+by^{k+1}-(ax+by)^{k+1}\\
+&\geqq ax^{k+1}+by^{k+1}-\maru1\\
+&=a(1-a)x^{k+1}-abxy^k-abx^ky+b(1-b)y^{k+1}\\
+&=ab(x^{k+1}-xy^k-x^ky+y^{k+1})\quad (\because a+b=1)\\
+&=ab(x-y)(x^k-y^k)\\
+&\geqq 0\quad (\because x-yとx^k-y^kは0または同符号)
+\end{align*}
+$$\therefore (ax+by)^{k+1}\leqq ax^{k+1}+by^{k+1}$$
+よって，$n=k+1$のとき不等式は成立する。
+\end{enumerate}
+
+I)，II)，帰納的に，不等式$(ax+by)^{n}\leqq ax^{n}+by^{n}$は自然数$n$について成り立つ。
+
+{\bf 【コメント】}
+
+後半は次のように書いてもよいでしょう。
+\begin{align*}
+&ab(x-y)(x^k-y^k)\\
+&=ab(x-y)^2(x^{k-1}+x^{k-2}y+\cdots+xy^{y-2}+y^{k-1})\\
+&\geqq 0
+\end{align*}
+
+\columnbreak
+この不等式は『グラフの凸性』より，示すことができます。
+
+$x\geqq 0$で，$y=f(x)=x^n$のグラフが下に凸であるので，グラフ上の2点$(x,\,f(x))$，$(y,\,f(y))$を$b:a$に内分する点Pはグラフの上側にある。
+
+
+\begin{center}
+\begin{zahyou}[ul=20mm,gentenhaiti={[se]},tatezikukigou={},yokozikukigou={},](-.5,3.1)(-.5,2.5)
+ \def\Fx{(X**2)/4}
+
+   \YGurafu\Fx{0}\xmax
+   \YTen\Fx{1}\A
+   \YTen\Fx{3}\B
+   \YTen\Fx{2}\Q
+   \Bunten\A\B11\P
+
+ \Put\A[syaei=xy,xlabel=x,ylabel=f(x)]{}
+ \Put\B[syaei=xy,xlabel=y,ylabel=f(y)]{}
+ \Put\P[syaei=xy,xlabel=\frac{ax+by}{a+b},ylabel=\frac{af(x)+bf(y)}{a+b}]{}
+ \Put\P[nw]{P}
+
+\Put\Q[syaei=y,ylabel=f\left(\frac{ax+by}{a+b}\right)]{}
+\Hen_ko\B\P{$a$}
+\Hen_ko\P\A{$b$}
+
+ \Drawline{\A\B}
+
+
+\end{zahyou}
+ \end{center}
+
+
+よって，
+$$f\left(\bunsuu{ax+by}{a+b}\right)\leqq \bunsuu{af(x)+bf(y)}{a+b}$$
+
+$a+b=1$，$f(x)=x^n$より，
+$$\therefore (ax+by)^{n}\leqq ax^{n}+by^{n}$$
+
+が成り立つ。
+
+
+\end{multicols*}
+\newpage
+
+%% 59 %%
+\Name{数学IAIIB応用}
+\hakosyokika
+\begin{caprm}
+放物線${\it C}:y=\bunsuu14x^{2}$と，点B$(0,\,b)$を中心とする半径$r$の円（ただし，$r<b$）は異なる2点$A_{1}$，$A_{2}$を共有し，それ以外には共有点をもたないとする。ここで，点$A_{1}$，$A_{2}$はそれぞれ，第1象限，第2象限にあるとする。
+
+\begin{enumerate}
+\item 円の中心Bおよび2点$A_{1}$，$A_{2}$の座標を
+$r$を用いて表せ。さらに，$r$の値の範囲を求めよ。
+
+\item $r=4$のとき，$\kaku{}A_{1}BA_{2}$の大きさを求めよ。ただし，$0\Deg<\kaku{}A_{1}BA_{2}<180\Deg$とする。
+
+
+
+\item (2)で求めた$\kaku{}A_{1}BA_{2}$に対する弧$\ko*{A_{1}A_{2}}$と放物線${\it C}$で囲まれた図形の面積を求めよ。
+
+\end{enumerate}
+
+
+
+\begin{multicols*}{2}
+{\bf 【解答】}
+
+\begin{enumerate}
+\item 放物線${\it C}$と円$x^2+(y-b)^2=r^2\cdots\maru1$の2式より，$x$を消去した$y$の2次方程式が重解を持てばよい。
+
+\begin{center}
+\begin{zahyou}[haiti=t,ul=5mm,yokozikukigou={$x$},tatezikukigou={$y$},gentenhaiti={[sw]},yokozikuhaiti={[s]},tatezikuhaiti={[w]},yscale=1](-5,5)(-.5,10)
+\def\Fx{1/4*X**2}
+
+\YGurafu*\Fx
+\calcval{2*(sqrt(3))}\xa
+\calcval{-2*(sqrt(3))}\xb
+
+\tenretu{B(0,5)}
+\tenretu*{A(\xa,3);C(\xb,3)}
+
+\Put\A[e]{$A_1$}
+\Put\C[w]{$A_2$}
+
+\En\B{4}
+\Hasen{\A\C}
+\kuromaru{\B}
+%\thicklines
+%\YGurafu\Gx{0}\xmax
+
+%\YGurafu\Hx{0}\xmax
+
+
+
+%\thinlines
+%\YTen\Fx{1}\A
+%\YTen\Fx{-1}\B
+
+%\Put\A[syaei=xy,xlabel=1,ylabel=\frac12]{}
+%\Put\B[syaei=xy,xlabel=-1,ylabel=-\frac12]{}
+
+%\Put{(2,0)}[se]{$2$}
+%\Put{(3,0)}[se]{$3$}
+%\Put{(4,0)}[se]{$4$}
+
+%\Drawline{(3,\ymax)(3,\ymin)}
+%\Drawline{(4,\ymax)(4,\ymin)}
+%\Drawline{(\Pii,\ymax)(\Pii,\ymin)}
+
+\end{zahyou}
+\end{center}
+
+
+放物線${\it C}$の式より$x^2=4y$として，\maru1に代入し，
+$$4y+y^2-2by+b^2-r^2=0$$
+$$\therefore y^2-2(b-2)y+b^2-r^2=0$$
+$$D/4=(b-2)^2-(b^2-r^2)=-4b+4+r^2=0$$
+$$\therefore b=1+\bunsuu{r^2}4\quad \therefore \bm{B\left(0,\,1+\bunsuu{r^2}4\right)}$$
+このとき，$A_1$，$A_2$の$y$座標は等しく，
+$$y=b-2=\bunsuu{r^2}4-1$$
+放物線${\it C}$の式より，
+$$x^2=r^2-4\quad \therefore x=\pm\sqrt{r^2-4}$$
+\begin{align*}
+\therefore \quad&\bm{A_1\left(\sqrt{r^2-4},\,\bunsuu{r^2}4-1\right)}\\
+&\bm{A_2\left(-\sqrt{r^2-4},\,\bunsuu{r^2}4-1\right),\quad r>2}
+\end{align*}
+
+\item $r=4$のとき，$A_1(2\sqrt 3,\,3),\,A_2(-2\sqrt 3,\,3),\,B(0,\,5)$である。
+
+\begin{center}
+\begin{zahyou}[haiti=t,ul=5mm,yokozikukigou={$x$},tatezikukigou={$y$},gentenhaiti={[sw]},yokozikuhaiti={[s]},tatezikuhaiti={[w]},yscale=1](-5,5)(-.5,10)
+\def\Fx{1/4*X**2}
+\def\Gx{5-(sqrt(16-X**2))}
+
+\YGurafu*\Fx
+\calcval{2*(sqrt(3))}\xa
+\calcval{-2*(sqrt(3))}\xb
+
+\tenretu{B(0,5)nw}
+\tenretu*{A(\xa,3);C(\xb,3);D(0,3)}
+
+\Put\A[e]{$A_1$}
+\Put\C[w]{$A_2$}
+\Put\B[ne]{$5$}
+\Put\D[se]{$3$}
+
+\En\B{4}
+\Drawline{\A\C\B\A}
+\Hen_ko\B\C{$4$}
+\Hen_ko\C\D{$2\sqrt{3}$}
+\Hen_ko\D\B{$2$}
+
+
+\Put\A[syaei=x,xlabel=2\sqrt 3]{}
+\Put\C[syaei=x,xlabel=-2\sqrt 3]{}
+
+\kuromaru{\B}
+%\thicklines
+%\YGurafu\Gx{0}\xmax
+
+%\YGurafu\Hx{0}\xmax
+
+
+\YNurii*\Gx\Fx\xb\xa
+%\thinlines
+%\YTen\Fx{1}\A
+%\YTen\Fx{-1}\B
+
+%\Put\A[syaei=xy,xlabel=1,ylabel=\frac12]{}
+%\Put\B[syaei=xy,xlabel=-1,ylabel=-\frac12]{}
+
+%\Put{(2,0)}[se]{$2$}
+%\Put{(3,0)}[se]{$3$}
+%\Put{(4,0)}[se]{$4$}
+
+%\Drawline{(3,\ymax)(3,\ymin)}
+%\Drawline{(4,\ymax)(4,\ymin)}
+%\Drawline{(\Pii,\ymax)(\Pii,\ymin)}
+
+\end{zahyou}
+\end{center}
+
+
+図より，$\bm{\kaku{}A_1BA_2=120\Deg}$
+
+\item 放物線${\it C}$と直線$y=3$で囲まれた部分$(A)$から，扇形$A_1BA_2$を除き，$\sankaku{}A_1BA_2$を加えればよい。（上図の斜線部分）
+
+\begin{align*}
+&(A)-扇形A_1BA_2+\sankaku{}A_1BA_2\\
+&=4\sqrt3\cdot 3\cdot \bunsuu23-4^2\pi\cdot\bunsuu13+4^2\sin120\Deg\cdot\bunsuu12\\
+&=8\sqrt 3-\bunsuu{16}3\pi+4\sqrt 3\\
+&=\bm{12\sqrt 3-\bunsuu{16}{3}\pi}
+\end{align*}
+
+\end{enumerate}
+
+{\bf 【コメント】}
+
+(3)の部分(A)の面積は$\dint{-2\sqrt 3}{2\sqrt 3}\left(3-\bunsuu{x^2}4\right)dx$ですが，横が$4\sqrt 3$，縦が$3$の長方形の$\bunsuu23$倍として計算できます。
+\end{multicols*}
+
+
+
+\end{caprm}%15
+
+\newpage
+
+%% 60 %%
+\Name{数学IAIIB応用}
+\hakosyokika
+任意の実数$x$に対して常に$ax^{2}+2bx+c>px^{2}+2qx+r>0\cdots☆$
+が成立することき，$ac-b^{2}>pr-q^{2}$が成立することを示せ。ただし，$a\neqq p$，$ap\neqq 0$とする。
+%59
+
+
+\begin{multicols*}{2}
+{\bf 【解答】}
+
+$f(x)=ax^{2}+2bx+c$，$g(x)=px^{2}+2qx+r$とおく。
+
+つねに，$f(x)-g(x)>0\wedge g(x)>0$が成り立つので，
+$$a-p>0\wedge p>0\quad \therefore a>p>0\cdots\maru1$$
+
+また，$f(x)=a\left(x+\bunsuu ba\right)^2+\bunsuu{ac-b^2}{a}$，$a>0$であるから，
+$$f(x)の最小値は\bunsuu{ac-b^2}{a}$$
+
+同様に，
+$$g(x)の最小値は\bunsuu{pr-q^2}{p}$$
+$f(x)の最小値>g(x)の最小値>0$より，
+$$\bunsuu{ac-b^2}{a}>\bunsuu{pr-q^2}{p}>0\cdots\maru2$$
+
+\maru1，\maru2より，
+$$\bunsuu{ac-b^2}{a}\cdot a>\bunsuu{pr-q^2}{p}\cdot p$$
+$$\therefore ac-b^{2}>pr-q^{2}$$
+
+{\bf 【コメント】}
+
+$y=f(x)$のグラフと$y=g(x)$のグラフの位置関係より，２つの不等式を作れば示せます。\maru1は放物線の開き具合を不等式で表しています。ここは図は明らかですが，説明となると難しかったのではないでしょうか。上の解答は明快です。参考に。
+\end{multicols*}
+\newpage
+
+
+
+
+%%61-65 2008/8%%
+%% 61 %%
+\Name{数学IAIIB応用}
+\hakosyokika
+数列$\{a_{n}\}$が$a_{1}=2$，$(n+2)a_{n+1}-na_{n}=3n+4\quad (n\geqq 1)$で定義されるとき，
+\begin{enumerate}
+\item $a_{2}$，$a_{3}$，$a_{4}$を求めよ。
+
+\item $a_{n}$を$n$の式で表せ。
+\end{enumerate}%4
+
+\begin{multicols*}{2}
+{\bf 【解答】}
+
+\begin{enumerate}
+\item 漸化式で$n=1$として，
+$$3a_2-a_1=7$$
+$$\therefore \bm{a_2}=\bunsuu{7+a_1}{3}=\bunsuu93=\bm{3}$$
+
+漸化式で$n=2$として，
+$$4a_3-2a_2=10$$
+$$\therefore \bm{a_3}=\bunsuu{10+2a_2}{4}=\bunsuu{16}4=\bm{4}$$
+
+漸化式で$n=3$として，
+$$5a_4-3a_3=13$$
+$$\therefore \bm{a_4}=\bunsuu{13+4a_3}{5}=\bunsuu{25}5=\bm{5}$$
+
+
+\item $a_{n}=n+1\cdots☆$と推測される。
+
+\item[(I)] $n=1$のとき，$a_1=2$より，☆は正しい。
+\item[(II)] $n=k$のとき，☆の成立を仮定する。
+
+漸化式で$n=k$として，
+$$(k+2)a_{k+1}-ka_{k}=3k+4$$
+仮定より，
+$$(k+2)a_{k+1}-k(k+1)=3k+4$$
+$$\therefore (k+2)a_{k+1}=k^2+4k+4$$
+$$\therefore (k+2)a_{k+1}=(k+2)^2$$
+$k+2\neqq 0$より，$a_{k+1}=k+2$となり，$n=k+1$のとき☆は成り立つ。
+
+(I)(II)，帰納的に自然数$n$について☆は成り立つ。
+$$\bm{a_n=n+1}$$
+\end{enumerate}%4
+\columnbreak
+
+
+
+{\bf 【コメント】}
+漸化式を解いてみましょう。
+
+漸化式の両辺を$(n+1)$倍して，
+$$(n+2)(n+1)a_{n+1}-(n+1)na_{n}=(3n+4)(n+1)$$
+$n\geqq 2$として，
+\begin{align*}
+(n+1)na_{n}&=2\cdot1\cdot2+\tretuwa{k=1}{n-1}(3k+4)(k+1)\\
+&=4+\tretuwa{k=2}{n}(3k+1)k\\
+&=\tretuwa{k=1}{n}(3k^2+k)\\
+&=\bunsuu12n(n+1)(2n+1)+\bunsuu12n(n+1)\\
+&=n(n+1)^2\quad (n=1も成立)
+\end{align*}
+$$\therefore (n+1)na_{n}=n(n+1)^2$$
+両辺を$n(n+1)\,(\neqq0)$で割って，
+$$\therefore \bm{a_n=n+1}$$
+\end{multicols*}
+\newpage
+
+
+%% 62 %%
+\Name{数学IAIIB応用}
+\hakosyokika
+3の倍数でない自然数を小さいものから順に並べたとき，$n$番目の数を$a_{n}$とする。例えば，$a_{1}=1$，$a_{2}=2$，$a_{3}=4$，$a_{4}=5$，$a_{5}=7$，$a_{6}=8$，$a_{7}=10$，$a_{8}=11$，$\cdots$である。
+\begin{enumerate}
+\item $a_{20}$を求めよ。
+
+\item $\tretuwa{k=1}{20}a_{k}$の値を求めよ。
+
+\item $a_{n}=2008$となる$n$の値を求めよ。
+\end{enumerate}
+%8
+
+\begin{multicols*}{2}
+{\bf 【解答】}
+
+\begin{enumerate}
+\item $\bm{a_{20}}=3\times \bunsuu{20}{2}-1=\bm{29}$
+
+
+\item $\begin{aligned}[t]
+\tretuwa{k=1}{20}a_{k}&=\tretuwa{k=1}{30}k-\tretuwa{k=1}{10}3k\\
+&=\bunsuu{30\times31}{2}-\bunsuu{3\times10\times11}{2}\\
+&=\bunsuu{30(31-11)}{2}\\
+&=\bm{300}
+\end{aligned}$
+
+\item $2007=3\cdot669$より，
+$$\bm{n}=669\times 2+1=\bm{1339}$$
+\end{enumerate}%4
+
+
+
+{\bf 【コメント】}
+
+$a_n$の一般式にこだわらなくてもよいと思いますが，一応，書いておきます。
+
+$a_n$の階差数列$\{b_n\}$は$1,2,1,2,\cdots$となるので，
+$$b_n=\bunsuu{3+(-1)^n}2$$
+$n\geqq 2$として，
+\begin{align*}
+a_n&=1+\tretuwa{k=1}{n-1}b_k\\
+&=1+\tretuwa{k=1}{n-1}\left(\bunsuu32-\bunsuu12(-1)^{k-1}\right)\\
+&=1+\bunsuu32(n-1)-\bunsuu12\cdot\bunsuu{1-(-1)^{n-1}}{1-(-1)}\\
+&=\bunsuu32n-\bunsuu34+\bunsuu{(-1)^{n-1}}4\quad(n=1も成立)
+\end{align*}
+これを使うと，(2)(3)がすぐ解けるという訳ではありません。（かえって面倒です）
+
+
+\end{multicols*}
+\newpage
+
+%% 63 %%
+\Name{数学IAIIB応用}
+\hakosyokika
+
+$0\leqq x<\pi$のとき，関数$f(x)=a\cos^{2}x+b\sin^{2}x+\cos x\sin x$について，次の問いに答えなさい。ただし，$a$，$b$は実数である。
+\begin{enumerate}
+\item $f(x)$を$\cos 2x$と$\sin 2x$を用いて表せ。
+
+\item $f(x)$の最大値と最小値をそれぞれ$a$，$b$を用いて表せ。
+
+\item $f(x)$の最大値と最小値がをそれぞれ$2$，$-1$であるとき，$a$，$b$の値を求めよ。
+\end{enumerate}
+%36
+
+
+
+\begin{multicols*}{2}
+{\bf 【解答】}
+
+\begin{enumerate}
+\item 2倍角の公式より，
+\begin{align*}
+\bm{f(x)}&=a\cdot\bunsuu{1+\cos2x}2+b\cdot\bunsuu{1-\cos2x}2+\bunsuu12\sin2x\\
+&=\bm{\bunsuu12\{(a-b)\cos2x+\sin2x+a+b\}}\end{align*}
+
+
+\item 合成して，
+\begin{align*}
+f(x)&=\bunsuu12\{\sqrt{(a-b)^2+1}\sin(2x+\alpha)+a+b\}\end{align*}
+$\alpha\leqq 2x+\alpha<2\pi+\alpha$より，1周期分あるので，
+$$\begin{emcases}
+&\bm{最大値 \bunsuu12\{\sqrt{(a-b)^2+1}+a+b\}}\\ \\
+&\bm{最小値 \bunsuu12\{-\sqrt{(a-b)^2+1}+a+b\}}\end{emcases}$$
+
+\item $最大値=2\cdots\maru1,\,最大値=-1\cdots\maru2$
+
+$\maru1+\maru2$より，
+$$a+b=1\cdots\maru3$$
+
+\maru1より，
+$$\sqrt{(a-b)^2+1}+1=4\quad \therefore (a-b)^2=8$$
+$$\therefore a-b=\pm2\sqrt 2\cdots\maru4$$
+
+\maru3，\maru4より，
+$$\bm{(a,\,b)=\left(\bunsuu{1\pm2\sqrt 2}2,\,\bunsuu{1\mp2\sqrt 2}2\right) （複合同順）}$$
+\end{enumerate}%4
+
+
+
+{\bf 【コメント】}
+
+三角関数の2倍角の公式と合成です。合成は$\sin$，$\cos$どちらでも自由自在にできるように。また，(3)で\maru1，\maru2より，$a$，$b$を求めるときにはちょっとかわった連立方程式を解きますが，上記の解法を参考にしてください。
+
+
+\end{multicols*}
+
+\newpage
+
+
+
+%% 64 %%
+\Name{数学IAIIB応用}
+\hakosyokika
+\begin{caprm}
+平面上に\sankaku{ABC}がある。この平面上の点Pに対してAPの中点をQ，BQの中点をR，CRの中点をSとする。2点P，Sが一致しているとき，
+\begin{enumerate}
+\item $\bekutoru{AB}=\Beku b$，$\bekutoru{AC}=\Beku c$とするとき，$\bekutoru{AP}$を$\Beku b$，$\Beku c$を用いて表せ。
+
+\item \sankaku{PQR}と\sankaku{ABC}の面積比を求めよ。
+\end{enumerate}
+
+
+
+\begin{multicols*}{2}
+{\bf 【解答】}
+
+\begin{enumerate}
+\item $\bekutoru{AP}=x\Beku b+y\Beku c\cdots\maru1$とおくと，
+\begin{align*}
+\bekutoru{AQ}&=\bunsuu12\bekutoru{AP}=\bunsuu x2\Beku b+\bunsuu y2\Beku c
+\end{align*}
+
+\begin{align*}
+\therefore \bekutoru{AR}&=\bunsuu{\bekutoru{AB}+\bekutoru{AQ}}2
+=\bunsuu{\Beku b+\frac x2\Beku b+\frac y2\Beku c}2\\
+&=\bunsuu{x+2}4\Beku b+\bunsuu y4\Beku c
+\end{align*}
+
+\begin{align*}
+\therefore \bekutoru{AS}&=\bunsuu{\bekutoru{AR}+\bekutoru{AC}}2
+=\bunsuu{\frac {x+2}4\Beku b+\frac y4\Beku c+\Beku c}2\\
+&=\bunsuu{x+2}8\Beku b+\bunsuu {y+4}8\Beku c\cdots\maru2
+\end{align*}
+
+$P=S$より，$\bekutoru{AP}=\bekutoru{AS}$。
+
+\maru1，\maru2，$\Beku b$と$\Beku c$は一次独立より，
+$$x=\bunsuu{x+2}8,\,y=\bunsuu{y+4}8$$
+$$\therefore x=\bunsuu27,\,y=\bunsuu47$$
+$$\therefore \bm{\bekutoru{\bf AP}=\bunsuu27\Beku b+\bunsuu47\Beku c}$$
+
+
+\item APの延長とBCが交わる点をTとする。
+
+\begin{center}
+\begin{zahyou*}[haiti=t,ul=12mm,yokozikukigou={$x$},tatezikukigou={$y$},gentenhaiti={[sw]},yokozikuhaiti={[s]},tatezikuhaiti={[e]}](-.5,4.5)(-.5,3.5)
+\tenretu{A(1,3)n;B(0,0)w;C(4,0)e}
+
+\Bunten\B\C21\T
+\Bunten\A\T61\P
+\Bunten\A\T34\Q
+\Bunten\C\P2{-1}\R
+
+
+\Put\T[s]{T}
+\Put\P[ne]{P}
+\Put\Q[e]{Q}
+\Put\R[nw]{R}
+\Takakkei{\A\B\C}
+\Drawlines{\A\T;\B\Q;\C\R}
+\end{zahyou*}
+\end{center}
+
+
+
+$\bekutoru{AT}=k\bekutoru{AP}$とおくと，
+$$\bekutoru{AT}=\bunsuu{2k}7\Beku b+\bunsuu{4k}7\Beku c$$
+TはBC上より，
+$$\bunsuu{2k}7+\bunsuu{4k}7=1\quad \therefore k=\bunsuu76$$
+
+よって，$\bekutoru{AT}=\bunsuu76\bekutoru{AP}$となり，
+$$AQ:QP:PT=3:3:1,\,BT:TC=2:1$$
+
+$\sankaku{ABC}=1$とおくと，
+$$\sankaku{APC}=\bunsuu26\cdot\bunsuu67=\bunsuu27$$
+他も同様なので，
+$$\sankaku{APC}=\sankaku{BQA}=\sankaku{CRB}=\bunsuu27$$
+$$\therefore \sankaku{PQR}=1-\bunsuu72\times 3=\bunsuu17$$
+$$\therefore \bm{\sankaku{\bf PQR}:\sankaku{\bf ABC}=1:7}$$
+\end{enumerate}
+
+
+
+{\bf 【コメント】}
+
+下の図の7つの三角形の面積は等しくなります。
+\begin{center}
+\begin{zahyou*}[haiti=t,ul=10mm,yokozikukigou={$x$},tatezikukigou={$y$},gentenhaiti={[sw]},yokozikuhaiti={[s]},tatezikuhaiti={[e]}](-.5,4.5)(-.5,3.5)
+\tenretu{A(1,3)n;B(0,0)w;C(4,0)e}
+
+\Bunten\B\C21\T
+\Bunten\A\T61\P
+\Bunten\A\T34\Q
+\Bunten\C\P2{-1}\R
+
+
+%\Put\T[s]{T}
+\Put\P[ne]{P}
+\Put\Q[e]{Q}
+\Put\R[nw]{R}
+\Takakkei{\A\B\C}
+\Drawlines{\A\P;\B\Q;\C\R;\A\R;\B\P;\C\Q}
+\end{zahyou*}
+\end{center}
+$$\therefore \bm{\sankaku{\bf PQR}:\sankaku{\bf ABC}=1:7}$$
+
+$$\therefore \sankaku{PBC}:\sankaku{PCA}:\sankaku{PAB}=1:2:4$$
+
+$$\therefore \Beku p=\bunsuu{\Beku a+2\Beku b+4\Beku c}{1+2+4}$$
+Aが基点なので，$ \bm{\bekutoru{\bf AP}=\bunsuu27\Beku b+\bunsuu47\Beku c}$
+
+\end{multicols*}
+
+\end{caprm}
+%63
+
+\newpage
+
+
+
+%% 65 %%
+\Name{数学IAIIB応用}
+\hakosyokika
+自然数$n$に対して，$a_{n}=(\cos2^{n})(\cos2^{n-1})\cdots(\cos2)(\cos1)$とおく。ただし，角の大きさは弧度法を用いる。
+\begin{enumerate}
+\item $a_{1}=\bunsuu{\sin4}{4\sin1}$を示せ。
+\item $a_{n}=\bunsuu{\sin2^{n+1}}{2^{n+1}\sin1}$を示せ。
+\item $a_{n}<\bunsuu{\sqrt 2}{2^{n+1}}$を示せ。
+\end{enumerate}
+
+
+%37
+
+
+\begin{multicols*}{2}
+{\bf 【解答】}
+
+\begin{enumerate}
+\item 2倍角の公式繰り返し用いて，
+\begin{align*}
+\sin4&=2\sin2\cos2\\
+&=2(2\sin1\cos1)\cos2\\
+\therefore a_1&=\cos2\cos1=\bunsuu{\sin4}{4\sin1}
+\end{align*}
+
+
+\item $a_{n}=\bunsuu{\sin2^{n+1}}{2^{n+1}\sin1}\cdots☆$を帰納法で示す。
+
+
+\item[(i)] $n=1$のときは(1)より，☆は正しい。
+\item[(ii)] $n=k$のとき，☆が成り立つと仮定する。
+
+$n=k+1$のとき，
+\begin{align*}
+a_{k+1}&=\cos2^{k+1}a_k\\
+&=\bunsuu{\cos2^{k+1}\sin2^{k+1}}{2^{k+1}\sin1}\quad(\because 仮定)\\
+&=\bunsuu{\frac12\sin(2\cdot2^{k+1})}{2^{k+1}\sin1}\quad(\because 2倍角の公式)\\
+&=\bunsuu{\sin2^{k+2}}{2^{k+2}\sin1}
+\end{align*}
+よって，☆は成り立つ。
+
+(i)，(ii)，帰納的に自然数$n$について☆は成り立つ。
+$$a_{n}=\bunsuu{\sin2^{n+1}}{2^{n+1}\sin1}$$
+
+
+\item $\bunsuu{\sin2^{n+1}}{\sin1}<\sqrt2$であればよい。
+
+$\bunsuu{\pi}4<1<\bunsuu{\pi}{3}$より，
+$$\sin \bunsuu{\pi}4<\sin1<\bunsuu{\pi}{3}$$
+$$\therefore \bunsuu1{\sqrt 2}<\sin1<\bunsuu{\sqrt 3}2$$
+$$\therefore \bunsuu2{\sqrt 3}<\bunsuu{1}{\sin1}<\sqrt 2$$
+$\sin2^{n+1}\leqq 1$より，
+$$\therefore \bunsuu{\sin2^{n+1}}{\sin1}<\sqrt 2$$
+$$\therefore a_n=\bunsuu{\sin2^{n+1}}{2^{n+1}\sin1}<\bunsuu{\sqrt 2}{2^{n+1}}$$
+
+与えられた不等式は示された。
+
+
+\end{enumerate}%4
+
+
+{\bf 【コメント】}
+
+
+$\bunsuu{\pi}4<1<\bunsuu{\pi}{3}$でもわかるように，弧度法で1は結構大きな角です。約$57.29578\Deg$で$\bunsuu{\pi}3$に近いこともわかります。
+
+
+\end{multicols*}
+
+
+\newpage
+
+
+
+
+
+%%66-70 2008/9%%
+%% 66 %%
+\Name{数学IAIIB応用}
+\hakosyokika
+6人の学生を3組に分ける。まず，3人，2人，1人の3組に分ける方法は\Hako 通りある。次に2人ずつの3組に分ける方法は\Hako 通りある。6人の学生を3組に分ける方法は全部で\Hako 通りある。
+%8
+
+
+\begin{multicols*}{2}
+{\bf 【解答】}
+
+\begin{enumerate}[(ア)]
+\item $\kumiawase63\cdot\kumiawase32\cdot\kumiawase11=\bm{60（通り）}$
+\item $\bunsuu{\kumiawase62\cdot\kumiawase42\cdot\kumiawase22}{3\kaizyou}=\bm{15（通り）}$
+\item 人数の分け方は次の3パターン$$(1,\,1,\,4)(1,\,2,\,3)(2,\,2,\,2)$$
+
+
+\begin{enumerate}[(i)]
+\item $(1,\,1,\,4)$のとき，
+$$\bunsuu{\kumiawase61\cdot\kumiawase51\cdot\kumiawase44}{2\kaizyou}=15（通り）$$
+\item $(1,\,2,\,3)$のとき，（ア）より60通り。
+\item $(2,\,2,\,2)$のとき，（イ）より15通り。
+
+\end{enumerate}
+以上，合計して，
+$$15+60+15=\bm{90（通り）}$$
+
+
+\end{enumerate}%4
+
+
+
+{\bf 【コメント】}
+
+『組み分け問題』です。組の区別はしっかりマスターしましたか？
+
+(3)の別解
+
+6人がA，B，Cの組を選択（$3\kaizyou$通り）。ただし，1組に集中するケース（$3$通り）と2組に集中するケース（$\kumiawase32(2^6-2)$通り）を除く。最後に，A，B，Cの組の別をなくす（$3\kaizyou$で割る）。
+
+\begin{align*}
+\bunsuu{\{3^6-\kumiawase32(2^6-2)-3\}}{3\kaizyou}
+&=\bunsuu{729-3\cdot62-3}6\\
+&=\bunsuu{540}6\\
+&=\bm{90（通り）}
+\end{align*}
+\end{multicols*}
+
+
+
+\newpage
+
+
+%% 67 %%
+\Name{数学IAIIB応用}
+\hakosyokika
+1，2，3，4を重複を許して並べてできる数について，
+\begin{enumerate}
+
+\item 各桁の数の和が6となる5桁の数の個数を求めよ。
+
+\item 各桁の数の和が7となる5桁の数の個数を求めよ。
+
+\item 各桁の数の和が$k+3$となる$k$桁の数の個数を求めよ。
+
+
+
+\end{enumerate}
+
+%8
+
+
+\begin{multicols*}{2}
+{\bf 【解答】}
+
+\begin{enumerate}
+\item $1,\,1,\,1,\,1,\,2$を並べて，
+$$\kumiawase51=\bm{5（個）}$$
+
+\item
+\begin{enumerate}[(i)]
+\item $1,\,1,\,1,\,1,\,3$を並べて，
+$$\kumiawase51=5（個）$$
+\item $1,\,1,\,1,\,2,\,2$を並べて，
+$$\kumiawase52=10（個）$$
+\end{enumerate}
+合計して，
+$$5+10=\bm{15（個）}$$
+
+\item \begin{enumerate}[(i)]
+\item $\underbrace{1,\,\cdots\cdots\cdots,\,1}_{k-1個},\,4$を並べて，
+$$\kumiawase k1=k（個）$$
+
+\item $\underbrace{1,\,\cdots\cdots,\,1}_{k-2個},\,2,\,3$を並べて，
+$$\kumiawase k1\cdot\kumiawase{n-1}1=k(k-1)（個）$$
+
+\item $\underbrace{1,\,\cdots,\,1}_{k-3個},\,2,\,2,\,2$を並べて，
+$$\bunsuu{k\kaizyou}{3\kaizyou(k-3)\kaizyou}=\bunsuu{k(k-1)(k-2)}{6}（個）$$
+
+
+\end{enumerate}
+合計して，
+\begin{align*}
+{\rm (i)+(ii)+(iii)}&=k+k(k-1)+\bunsuu{k(k-1)(k-2)}{6}\\
+&=\bunsuu16k(6+6k-6+k^2-3k+2)\\
+&=\bunsuu16k(k^2+3k+2)\\
+&=\bm{\bunsuu16k(k+1)(k+2)（個）}
+\end{align*}
+
+\end{enumerate}
+
+
+
+{\bf 【コメント】}
+
+(3)でいきなり文字$k$が入ってきます。ちゃんと数えられましたか？
+
+答えは$\kumiawase{k+2}3$なので，別の意味付けも可能です。
+
+例えば，$i$桁目の数字を$a_i$とし，$b_j=\tretuwa{i=1}{j}a_i$とすると，
+$$1\leqq b_1<b_2<b_3<\cdots<b_{k-1}\leqq k+2$$
+であり，$b_k=k+3（各桁の和）$である。
+$$\therefore \kumiawase{k+2}{k-1}=\kumiawase{k+2}{3}=\bm{\bunsuu16k(k+1)(k+2)（個）}$$
+となります。
+
+\end{multicols*}
+
+\newpage
+
+%% 68 %%
+\Name{数学IAIIB応用}
+\hakosyokika
+
+白い玉が2個，黒い玉が3個，赤い玉が4個ある。これらの玉を次のような条件ですべて使って，一列に並べる。
+\begin{enumerate}
+\item 玉の色のすべての並べ方は，\Hako 通りである。
+\item 白い玉2個が隣り合わない並べ方は，\Hako 通りある。
+\item 黒い玉3個が連続している並べ方は，\Hako 通りある。
+\item 同じ色な玉は連続しない並べ方は，\Hako 通りある。
+
+
+\end{enumerate}
+%14
+
+
+\begin{multicols*}{2}
+{\bf 【解答】}
+
+\begin{enumerate}
+\item $\bunsuu{9\kaizyou}{2\kaizyou3\kaizyou4\kaizyou}=\bm{1260（通り）}$
+
+
+\item 赤と黒を一列に並べて（$\kumiawase73$通り），その間，または両端の8カ所から2カ所選んで白玉を配置すればよい。
+$$\therefore \kumiawase73\cdot\kumiawase82=35\cdot28=\bm{980（通り）}$$
+
+\item 白玉○，赤玉◎，黒玉●とする。黒玉3個を一塊と考えて，
+\begin{center}
+○○\fbox{●●●}◎◎◎◎
+\end{center}
+を並べればよい。
+$$\therefore \bunsuu{7\kaizyou}{2\kaizyou4\kaizyou}=\bm{105（通り）}$$
+
+\item まず，白玉2個，黒玉3個を一列に並べ（$\kumiawase52=10$通り），それぞれの並びに対して，赤玉の配置の方法を考える。↑は必ず赤玉を入れるところで，△は入れても入れなくてもよいところとなる。
+
+\begin{enumerate}[m]
+\item ${}_{△}○_{↑}○_{△}●_{↑}●_{↑}●_{△}\cdots\kumiawase31=3（通り）$
+
+\item ${}_{△}●_{△}○_{↑}○_{△}●_{↑}●_{△}\cdots\kumiawase42=6（通り）$
+
+\item ${}_{△}●_{↑}●_{△}○_{↑}○_{△}●_{△}\cdots\kumiawase42=6（通り）$
+
+
+\item ${}_{△}●_{↑}●_{↑}●_{△}○_{↑}○_{△}\cdots\kumiawase31=3（通り）$
+
+\item ${}_{△}○_{△}●_{↑}●_{↑}●_{△}○_{△}\cdots\kumiawase42=6（通り）$
+
+\item ${}_{△}○_{△}●_{△}○_{△}●_{↑}●_{△}\cdots\kumiawase53=10（通り）$
+
+
+\item ${}_{△}●_{△}○_{△}●_{△}○_{△}●_{△}\cdots\kumiawase64=15（通り）$
+
+\item ${}_{△}●_{↑}●_{△}○_{△}●_{△}○_{△}\cdots\kumiawase53=10（通り）$
+
+\item ${}_{△}●_{△}○_{△}●_{↑}●_{△}○_{△}\cdots\kumiawase53=10（通り）$
+
+\item ${}_{△}○_{△}●_{↑}●_{△}○_{△}●_{△}\cdots\kumiawase53=10（通り）$
+
+\end{enumerate}
+\maru1から\maru{10}を合計して，$\bm{79（通り）}$
+
+
+\end{enumerate}
+
+\columnbreak
+
+{\bf 【コメント】}
+
+『黒玉が3個連続していること』の余事象（否定）は『黒玉が3個連続していないこと』であり，『黒玉が1個も連続していないこと』ではありません。恐らく，集合で数えようとするとかなりの困難を伴うでしょう。
+
+\end{multicols*}
+\newpage
+
+
+
+%% 69 %%
+\Name{数学IAIIB応用}
+\hakosyokika
+6人がそれぞれプレゼントを持参してパーティーに参加した。参加者が自分以外の誰かにプレゼントを渡すとき，6人全員が1つずつプレゼントを受け取ることができるような渡し方は\karaHako 通りある。
+%14
+
+\begin{multicols*}{2}
+{\bf 【解答】}
+
+一般に，$n$人に$1$から$n$までの番号を振り，それら$n$個の数字を並べ替えた順列
+$$p_1,\,p_2,\,\cdots,\,p_n$$
+において，
+$$p_1\neqq 1かつp_2\neqq 2 かつ\cdots かつ p_n\neqq n \cdots ☆$$
+であるものの個数$f_{n}$がプレゼントの渡し方の総数である。
+
+\begin{itemize}
+\item まず，$p_{1}=2$とする。
+\item $p_{2}=1$のとき，1と2を入れ換えたときとなる。
+$$\begin{hyou}{ccccc}
+p_{1}&p_{2}&p_{3}&\cdots\cdots&p_{n}\\
+2&1&\multicolumn{3}{c}{（f_{n-2}通り）}\\
+\end{hyou}$$
+
+残りの$p_{3}$から$p_{n}$の並べ方は，
+\begin{center}
+3から$n$までの$n-2$人のプレゼント交換
+\end{center}
+を考えればよい。この総数は$f_{n-2}$（個）である。
+
+
+
+\item $p_{2}\neqq 1$のとき，$p_{2}$から$p_{n}$は$1,\,3,\,4,\,\cdots,\,n$の$n-1$個の数を並べる。
+$$\begin{hyou}{cccc}
+p_{1}&p_{2}&\cdots\cdots&p_{n}\\
+2&\multicolumn{3}{c}{（f_{n-1}通り）}\\
+\end{hyou}$$
+
+$p_{2}\neqq 1$なので，$1$を$2$と置き換えて，
+\begin{center}
+$2,\,3,\,4,\,\cdots,\,n$の$n-1$人のプレゼント交換
+\end{center}
+を考えればよい。この総数は$f_{n-1}$（個）である。
+
+\item $p_{1}$の置き方は2から$n$までの$n-1$通りあるので，漸化式は$n=3,4\cdots$として，
+$$f_{n}=(n-1)\{f_{n-1}+f_{n-2}\}$$
+となる。
+
+\end{itemize}
+ゆえに，$f_{1}=0$，$f_{2}=1$より，
+\begin{align*}
+f_4&=(4-1)(2+1)=3\cdot3=9\\
+f_5&=(5-1)(9+2)=4\cdot11=44\\
+\bm{f_6}&=(6-1)(44+9)=5\cdot53=\bm{265（通り）}
+\end{align*}
+{\bf 【コメント】}
+
+『完全順列』といいます。高1のときにやったと思うけど，プリントが欲しい人はあげます。
+\end{multicols*}
+\newpage
+
+
+
+%% 70 %%
+\Name{数学IAIIB応用}
+\hakosyokika
+空間に座標系が定められていて，$z$軸上に2点A$(0,\,0,\,6)$，B$(0,\,0,\,20)$が与えられている。$xy$平面上の点P$(x,\,y,\,0)$で，$0\leqq x\leqq 15$，$0\leqq y\leqq 15$，$\kaku{APB}\geqq30\Deg$を満たすものの全体が作る図形の面積を求めよ。
+%40
+
+
+\begin{multicols*}{2}
+{\bf 【解答】}
+\begin{caprm}
+
+$xy$平面上に$OP=h$となる点Pをとり，\\
+$$\theta=\kaku{APB}\geqq30\Deg$$を満たすような$h$の値の範囲を考える。
+
+\begin{center}
+\begin{zahyou*}[haiti=t,ul=2mm,yokozikukigou={$x$},tatezikukigou={$z$},gentenhaiti={[sw]},yokozikuhaiti={[s]},tatezikuhaiti={[e]}](-.5,12)(-2,22)
+\tenretu{A(0,6)w;B(0,20)w;P(10,0)e;O(0,0)w}
+\Arrowline{\O(0,\ymax)}
+\Put{(0,\ymax)}{$z$}
+\Drawlines{\A\P}
+\Takakkei{\O\P\B}
+\Tyokkakukigou\P\O\A
+\Kakukigou\B\P\A[r](3.5mm,130){$\theta$}
+\Kakukigou\A\P\O[r](3.5mm,160){$\alpha$}
+\Hen_ko<1>\B\O{20}
+\Hen_ko<.2>\A\O{6}
+\Hen_ko<.3>\O\P{$h$}
+
+\end{zahyou*}
+\end{center}
+
+
+$$\tan\alpha=\bunsuu6h\cdots\maru1$$
+$$\tan(\theta+\alpha)=\bunsuu{20}h\cdots\maru2$$
+$$\therefore \bunsuu{\tan\theta+\tan\alpha}{1-\tan\theta\tan\alpha}=\bunsuu{20}{h}$$
+$t=\tan\theta$とおいて，\maru1より，
+$$\bunsuu{t+\frac6h}{1-t\cdot\frac6h}=\bunsuu{20}{h}$$
+$$\therefore \bunsuu{ht+6}{h-6t}=\bunsuu{20}{h}$$
+$$\therefore h(ht+6)=20(h-6t)$$
+$$\therefore th^2-14h+120t=0$$
+$$\therefore t=\bunsuu{14h}{h^2+120}$$
+ここで，$t\geqq\tan30\Deg=\bunsuu1{\sqrt 3}$なので，
+$$\bunsuu{14h}{h^2+120}\geqq\bunsuu1{\sqrt 3}$$
+$$\therefore h^2-14\sqrt 3h+120\leqq 0$$
+$$\therefore 7\sqrt 3-3\sqrt 3\leqq h\leqq 7\sqrt 3+3\sqrt 3$$
+$$\therefore 4\sqrt 3\leqq h\leqq 10\sqrt 3$$
+この$h$の範囲で，Pの存在範囲を考えると，下の図の斜線部分となる。
+
+\begin{center}
+\begin{zahyou}[haiti=t,ul=2mm,yokozikukigou={$x$},tatezikukigou={$y$},gentenhaiti={[sw]},yokozikuhaiti={[s]},tatezikuhaiti={[e]}](-2,25)(-2,25)
+\tenretu*{A(15,0)w;B(15,15)w;C(0,15);D(20,0);E(20,15);F(0,20);G(15,20)}
+
+\calcval{4*(sqrt(3))}\ra
+\calcval{10*(sqrt(3))}\rb
+\rtenretu*{P(\rb,30);Q(\rb,60)}
+
+
+
+\Put\O{\ougigata**{\rb}{0}{90}}
+
+\Nuritubusi[0]{\B\A\D\E}
+\Nuritubusi[0]{\B\C\F\G}
+\Put\O{\ougigata*[0]{\ra}{0}{90}}
+
+\Drawlines{\A\B\C}
+\Drawlines{\P\O\Q}
+\Enko\O{\ra}{0}{90}
+\Enko\O{\rb}{0}{90}
+
+\Put\A[s]{15}
+\Put\C[w]{15}
+\Put{(\rb,0)}[ne]{$10\sqrt 3$}
+\Put{(\ra,0)}[s]{$4\sqrt 3$}
+
+\Kakukigou<0>\A\O\P[r](1mm,15){$\bullet$}
+\Kakukigou<0>\A\O\P[r](5mm,15){$30\Deg$}
+
+\Kakukigou<0>\P\O\Q[r](1mm,45){$\bullet$}
+\Kakukigou<0>\Q\O\C[r](1mm,65){$\bullet$}
+\end{zahyou}
+\end{center}
+
+
+\end{caprm}
+求める面積$S$は
+\begin{align*}
+S&=(10\sqrt3)^2\pi\cdot\bunsuu{30}{360}+15\cdot5\sqrt 3-(4\sqrt3)^2\pi\cdot\bunsuu{1}{4}\\
+&=25\pi+75\sqrt 3-12\pi\\
+&=\bm{13\pi+75\sqrt 3}
+\end{align*}
+
+{\bf 【コメント】}
+
+これは昔の東大の問題なのですが，見通しよくやらないと泥沼です。計算量もあります。角度の条件は，ベクトル（$\cos$）か，直線の傾き（$\tan$）で処理します。
+\end{multicols*}
+\newpage
+
+
+\end{document}
